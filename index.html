@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoTrust</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>CryptoTrust</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Mercado</a>
+      <a href="#">Segurança</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Invista com segurança em criptomoedas</h2>
+    <p>Plataforma moderna, transparente e confiável para seus investimentos digitais.</p>
+    <button class="cta">Comece agora</button>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-grid">
+      <div class="service"><div class="icon">💹</div><h3>Compra e Venda</h3><p>Negocie criptomoedas com rapidez e segurança.</p></div>
+      <div class="service"><div class="icon">🔒</div><h3>Carteira Segura</h3><p>Armazene seus ativos digitais com proteção avançada.</p></div>
+      <div class="service"><div class="icon">📊</div><h3>Análises de Mercado</h3><p>Acompanhe gráficos e relatórios em tempo real.</p></div>
+      <div class="service"><div class="icon">🤝</div><h3>Suporte 24/7</h3><p>Equipe especializada disponível a qualquer hora.</p></div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial"><p>"A plataforma é super intuitiva e segura."</p><h4>— Ana Souza</h4></div>
+      <div class="testimonial"><p>"Excelente suporte, sempre rápido e eficiente."</p><h4>— Carlos Mendes</h4></div>
+      <div class="testimonial"><p>"As análises me ajudaram a investir melhor."</p><h4>— Júlia Ferreira</h4></div>
+    </div>
+  </section>
+
+  <!-- API de preços -->
+  <section class="crypto-prices">
+    <h2>Preços em Tempo Real</h2>
+    <ul id="prices"></ul>
+  </section>
+
+  <!-- Formulário de cadastro -->
+  <section class="signup">
+    <h2>Cadastre-se</h2>
+    <form id="signupForm">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input type="password" id="senha" placeholder="Crie uma senha" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- CTA final -->
+  <section class="final-cta">
+    <h2>Pronto para começar sua jornada cripto?</h2>
+    <p>Cadastre-se agora e tenha acesso à plataforma mais segura e moderna.</p>
+    <button class="cta">Abrir minha conta</button>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    © 2026 CryptoTrust — Todos os direitos reservados.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

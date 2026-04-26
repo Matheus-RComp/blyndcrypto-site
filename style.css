@@ -1,0 +1,301 @@
+/* ===========================
+   1. Variáveis de cores
+=========================== */
+:root {
+  --azul-escuro: #1A2A41;
+  --cinza-grafite: #3D3D3D;
+  --preto: #000000;
+  --verde-neon: #2ECC71;
+  --roxo-metalico: #8A61D8;
+  --dourado: #C89D48;
+  --marrom-terra: #7C5A3A;
+}
+
+/* ===========================
+   2. Reset e base
+=========================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--azul-escuro);
+  color: #fff;
+}
+
+/* ===========================
+   3. Cabeçalho
+=========================== */
+header {
+  background-color: var(--cinza-grafite);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  color: var(--verde-neon);
+  font-size: 1.8em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--roxo-metalico);
+}
+
+/* ===========================
+   4. Hero
+=========================== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--azul-escuro), var(--preto));
+}
+.hero h2 {
+  font-size: 2.5em;
+  color: var(--verde-neon);
+}
+.hero p {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 10px;
+}
+.cta {
+  background-color: var(--roxo-metalico);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+.cta:hover {
+  background-color: var(--verde-neon);
+  color: var(--preto);
+}
+
+/* ===========================
+   5. Serviços
+=========================== */
+.services {
+  background-color: var(--preto);
+  padding: 60px 20px;
+  text-align: center;
+}
+.services h2 {
+  color: var(--roxo-metalico);
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.service {
+  background-color: var(--cinza-grafite);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.service:hover {
+  transform: translateY(-5px);
+  background-color: var(--azul-escuro);
+}
+.service .icon {
+  font-size: 2.5em;
+  color: var(--verde-neon);
+  margin-bottom: 15px;
+}
+.service h3 {
+  color: var(--dourado);
+  margin-bottom: 10px;
+}
+.service p {
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+/* ===========================
+   6. Depoimentos
+=========================== */
+.testimonials {
+  background-color: var(--azul-escuro);
+  padding: 60px 20px;
+  text-align: center;
+}
+.testimonials h2 {
+  color: var(--verde-neon);
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.testimonial {
+  background-color: var(--cinza-grafite);
+  padding: 25px;
+  border-radius: 10px;
+  font-style: italic;
+  transition: transform 0.3s;
+}
+.testimonial:hover {
+  transform: scale(1.05);
+}
+.testimonial p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+.testimonial h4 {
+  color: var(--dourado);
+  font-weight: normal;
+}
+
+/* ===========================
+   7. Preços em tempo real
+=========================== */
+.crypto-prices {
+  background-color: var(--preto);
+  padding: 40px 20px;
+  text-align: center;
+}
+.crypto-prices h2 {
+  color: var(--roxo-metalico);
+  margin-bottom: 20px;
+}
+.crypto-prices ul {
+  list-style: none;
+  padding: 0;
+}
+.crypto-prices li {
+  color: var(--verde-neon);
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* ===========================
+   8. Formulário de cadastro
+=========================== */
+.signup {
+  background-color: var(--cinza-grafite);
+  padding: 60px 20px;
+  text-align: center;
+}
+.signup input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+}
+.signup button {
+  background-color: var(--verde-neon);
+  color: var(--preto);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signup button:hover {
+  background-color: var(--roxo-metalico);
+  color: #fff;
+}
+
+/* ===========================
+   9. CTA final
+=========================== */
+.final-cta {
+  background: linear-gradient(135deg, var(--roxo-metalico), var(--verde-neon));
+  color: var(--preto);
+  text-align: center;
+  padding: 80px 20px;
+}
+.final-cta h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+.final-cta p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: var(--preto);
+}
+.final-cta .cta {
+  background-color: var(--preto);
+  color: var(--verde-neon);
+  border: none;
+  padding: 15px 35px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.final-cta .cta:hover {
+  background-color: var(--dourado);
+  color: var(--preto);
+}
+
+/* ===========================
+   10. Rodapé
+=========================== */
+footer {
+  background-color: var(--cinza-grafite);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: var(--dourado);
+}
+
+/* ===========================
+   11. Responsividade
+=========================== */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin-top: 15px;
+  }
+  .hero h2 {
+    font-size: 2em;
+  }
+  .service-grid, .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h2 {
+    font-size: 1.6em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .service-grid, .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  .final-cta h2 {
+    font-size: 1.6em;
+  }
+  .final-cta p {
+    font-size: 1em;
+  }
+}
